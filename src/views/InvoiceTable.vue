@@ -9,20 +9,7 @@
           Invoice Table
         </h2>
       </div>      
-      <div class="dropdown" style="padding-bottom: 20px; padding-top:10px; padding-left:15px;">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" 
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Filter By
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">User Name</a>
-              <a class="dropdown-item" href="#">Purchase Course</a>
-              <a class="dropdown-item" href="#">Purchase Date</a>
-              <a class="dropdown-item" href="#">Invoice Name</a>
-            </div>
-      
-      </div>  
-     <div class="table-responsive" id="invoicetable" style="overflow-y: auto; height: 500px; position: sticky; top: 0; ">
+      <div class="table-responsive" id="invoicetable" style="overflow-y: auto; height: 500px; position: sticky; top: 0; ">
        <table class="table table-bordered table-striped" style="border-collapse: collapse; width: 100%;">
          <thead style="position: sticky; top: 0;">
         <tr>
@@ -226,6 +213,20 @@
         </tbody>
        </table>
      </div> 
+      <div class="dropdown" style="padding-bottom: 20px; padding-top:10px; padding-left:15px;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filter By
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">User Name</a>
+              <a class="dropdown-item" href="#">Purchase Course</a>
+              <a class="dropdown-item" href="#">Purchase Date</a>
+              <a class="dropdown-item" href="#">Invoice Name</a>
+            </div>
+      
+      </div>  
+     
       <div
                   class="print col-md-6"
                   style="margin-left: auto; margin-right: auto;padding-bottom: 25px;"
