@@ -3,20 +3,11 @@
     <Header />
     <Banner />
     <Skills />
-    <FeaturedCourses />
+    <TestimonialsTabbed />
+    <FeaturedIn />
     <WhyCoding />
     <WhyUs />
-    <!--Gallery /-->
-    <!--Features /-->
-
-    <!--Statistics /-->
-    <!--Subscribe /-->
-    <!--HowItWorks /-->
-    <!--SignUp /-->
-    <TestimonialsTabbed />
-    <!-- Blog /-->
-    <FeaturedIn />
-    <!--<FeaturedProjects />-->
+    <FeaturedCourses />
     <Footer />
 
     <div id="learn-at-home-modal" class="cv-modal medium">
