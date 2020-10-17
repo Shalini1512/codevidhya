@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  .student-report {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+  }
+	.course {
+		width: 320px;
+		height: 180px;
+		color: black;
+		background-color: #aeaeae;
+		font-size: 24px;
+	}
+	#suggested-courses {
+		display: flex;
+		justify-content: space-around;
+	}
+  </style>
+</head>
+
+<body>
+  <div class="student-report">
+    <h1 style="text-align: center;">Student Report</h1>
+    <div id="skill-chart"></div>
+    <div>
+      <h3>&bull; Communication</h3>
+      <p>Your kid was exceptionally good at expressing their thoughts and ideas to the teacher and following teacher’s instructions , exhibiting great communication skills.</p>
+      <h3>&bull; Creativity</h3>
+      <p>Your kid did assigned tasks and solved class activities in record time by creatively working on solutions, exhibiting amazing creativity.</p>
+      <h3>&bull; Critical Thinking</h3>
+      <p>Your kid was deeply focused and solution-oriented in class and worked dedicatedly towards finding solutions, exhibiting logical and critical thinking skills.</p>
+      <h3>&bull; Collaboration</h3>
+      <p>Your kid was extremely deliberate and methodical in in-class problem solving and worked well in collaboration with the teacher towards successful session, exhibiting collaboration skills.</p>
+		</div>
+		<h2 style="text-align: center;">Below are suggested courses for your child</h2>
+		<div id="suggested-courses">
+			<div class="course">HTML & CSS</div>
+			<div class="course">Python</div>
+		</div>
+  </div>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    var rating = <%= studentRating %>;
+    function drawChart() {
+			var data = new google.visualization.DataTable();
+			data.addColumn('string', 'Skill');
+			data.addColumn('number', 'Rating');
+			data.addRows(studentRating);
+			var options = {
+				height: 300,
+				title: 'Your Kid\'s Progress on 21st Century Skills',
+				colors: ['#348ceb'],
+				hAxis: {
+					format: 'percent',
+					ticks: [0, .2, .4, .6, .8, 1]
+				},
+				legend: {position: 'none'}
+			};
+			var chart = new google.visualization.BarChart(document.getElementById('skill-chart'));
+			chart.draw(data, options);
+    }
+  </script>
+</body>
+</html>

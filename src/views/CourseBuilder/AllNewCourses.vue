@@ -1,0 +1,1563 @@
+<template>
+  <div class="">
+    <Header></Header>
+    <section class="sptb" style="padding-top: 72px;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12">
+            <div class="card mb-0">
+              <div class="card-header">
+                <h3 class="card-title font-weight-bold">All Courses</h3>
+                <button
+                  class="btn btn-success ml-auto"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  data-original-title="Click to add new course"
+                >
+                  New Course
+                </button>
+              </div>
+              <div class="card-body">
+                <div class="ads-tabs">
+                  <div class="tabs-menus">
+                    <!-- Tabs -->
+                    <ul class="nav panel-tabs">
+                      <li class="">
+                        <a href="#tab1" class="active" data-toggle="tab"
+                          >All Courses (20)</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#tab2" data-toggle="tab">Published (08)</a>
+                      </li>
+                      <li>
+                        <a href="#tab3" data-toggle="tab">Featured (05)</a>
+                      </li>
+                      <li><a href="#tab5" data-toggle="tab">Active (03)</a></li>
+                      <li>
+                        <a href="#tab6" data-toggle="tab">Expired (01)</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane active table-responsive border-top userprof-tab"
+                      id="tab1"
+                    >
+                      <table
+                        class="table table-striped table-hover mb-0 text-nowrap"
+                      >
+                        <thead>
+                          <tr>
+                            <th>Course Name</th>
+                            <th>Category</th>
+                            <th>Actual Price</th>
+                            <th>Discounted Price</th>
+                            <th>Course Status</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/13.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        HTML & CSS
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="far fa-clock mr-1"></i>
+                                      Oct-23-2019 , 9:18</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Public</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Web Development</td>
+                            <td class="font-weight-semibold fs-16">
+                              Rs. 5,000
+                            </td>
+                            <td class="font-weight-semibold fs-16">
+                              Rs. 1,999
+                            </td>
+                            <td>
+                              <a href="#" class="badge badge-success"
+                                >Published</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-gray-dark btn-sm text-white"
+                                data-toggle="tooltip"
+                                title="Edit"
+                                ><i class="fas fa-pencil-alt"></i>
+                              </a>
+                              <a
+                                class="btn btn-primary btn-sm text-white ml-1"
+                                data-toggle="tooltip"
+                                title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/2.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Scratch
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="far fa-clock mr-1"></i>
+                                      Nov-15-2019 , 12:45</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Private</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Game Development</td>
+                            <td class="font-weight-semibold fs-16">
+                              Rs. 8,000
+                            </td>
+                            <td class="font-weight-semibold fs-16">
+                              Rs. 3,999
+                            </td>
+                            <td>
+                              <a href="#" class="badge badge-warning"
+                                >Incomplete</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-gray-dark btn-sm text-white mr-1"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fas fa-pencil-alt"></i>
+                              </a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/1.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Javascript
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="far fa-clock mr-1"></i>
+                                      Dec-25-2019 , 16:54</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Public</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Web Development</td>
+                            <td class="font-weight-semibold fs-16">
+                              Rs. 5,000
+                            </td>
+                            <td class="font-weight-semibold fs-16">
+                              Rs. 2,999
+                            </td>
+                            <td>
+                              <a href="#" class="badge badge-info"
+                                >Unpublished</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-gray-dark btn-sm text-white mr-1"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fas fa-pencil-alt"></i>
+                              </a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div
+                      class="tab-pane  table-responsive border-top userprof-tab"
+                      id="tab2"
+                    >
+                      <table
+                        class="table table-bordered table-hover mb-0 text-nowrap"
+                      >
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Coursed</th>
+                            <th>Category</th>
+                            <th>Fees</th>
+                            <th>Course Status</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/10.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Scripting Classes
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Feb-21-2018 , 16:54</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Online</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Languages</td>
+                            <td class="font-weight-semibold fs-16">$54</td>
+                            <td>
+                              <a href="#" class="badge badge-warning"
+                                >Published</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/18.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Marketing
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Oct-23-2018 , 9:18</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Offline</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Marketing</td>
+                            <td class="font-weight-semibold fs-16">$156</td>
+                            <td>
+                              <a href="#" class="badge badge-warning"
+                                >Published</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/2.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Computer Networks
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Feb-21-2018 , 16:54</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Online</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Networking</td>
+                            <td class="font-weight-semibold fs-16">$25</td>
+                            <td>
+                              <a href="#" class="badge badge-warning"
+                                >Published</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/12.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Animation
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i
+                                      >Dec-15-2018 , 12:45 pm</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i> Online</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>3D animation</td>
+                            <td class="font-weight-semibold fs-16">$22</td>
+                            <td>
+                              <a href="#" class="badge badge-warning"
+                                >Published</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/8.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Beautician
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Dec-03-2018 , 16:45</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i> Online</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Beautician</td>
+                            <td class="font-weight-semibold fs-16">$35,978</td>
+                            <td>
+                              <a href="#" class="badge badge-warning"
+                                >Published</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/7.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Data Science
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Nov-20-2018 , 16:54</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Offline</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Data Science</td>
+                            <td class="font-weight-semibold fs-16">$129</td>
+                            <td>
+                              <a href="#" class="badge badge-warning"
+                                >Published</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/18.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Digital Marketing
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Sep-22-2018 , 9:18 </a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Offline</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Digital Marketing</td>
+                            <td class="font-weight-semibold fs-16">$235</td>
+                            <td>
+                              <a href="#" class="badge badge-warning"
+                                >Published</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/10.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Scripting
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Dec-21-2018 , 19:45</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Online</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Languages</td>
+                            <td class="font-weight-semibold fs-16">$765</td>
+                            <td>
+                              <a href="#" class="badge badge-warning"
+                                >Published</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div
+                      class="tab-pane  table-responsive border-top userprof-tab"
+                      id="tab3"
+                    >
+                      <table
+                        class="table table-bordered table-hover  text-nowrap mb-0"
+                      >
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Coursed</th>
+                            <th>Category</th>
+                            <th>Fees</th>
+                            <th>Course Status</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/18.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Digital Marketing
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Nov-22-2018 , 9:18</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Offline</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Marketing</td>
+                            <td class="font-weight-semibold fs-16">$14,000</td>
+                            <td>
+                              <a href="#" class="badge badge-primary"
+                                >featured</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/2.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Networking
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Nov-15-2019 , 12:45</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Online</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Networking</td>
+                            <td class="font-weight-semibold fs-16">$22,765</td>
+                            <td>
+                              <a href="#" class="badge badge-primary"
+                                >featured</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/20.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Data Science
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Nov-12-2018 , 16:50</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i> Offline</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Data Science</td>
+                            <td class="font-weight-semibold fs-16">$35,978</td>
+                            <td>
+                              <a href="#" class="badge badge-primary"
+                                >featured</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/1.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Coding
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Nov-15-2019 , 08:54</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Offline</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Languages</td>
+                            <td class="font-weight-semibold fs-16">$89</td>
+                            <td>
+                              <a href="#" class="badge badge-primary"
+                                >featured</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/8.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Beautician
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Nov-14-2018 , 19:18</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Offline</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Beautician</td>
+                            <td class="font-weight-semibold fs-16">$14,000</td>
+                            <td>
+                              <a href="#" class="badge badge-primary"
+                                >featured</a
+                              >
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div
+                      class="tab-pane  table-responsive border-top userprof-tab"
+                      id="tab5"
+                    >
+                      <table
+                        class="table table-bordered table-hover mb-0 text-nowrap"
+                      >
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Coursed</th>
+                            <th>Category</th>
+                            <th>Fees</th>
+                            <th>Course Status</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/1.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Coding
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Nov-25-2018 , 16:54</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Offline</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Languages</td>
+                            <td class="font-weight-semibold fs-16">$89</td>
+                            <td>
+                              <a href="#" class="badge badge-success">Active</a>
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/18.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Marketing
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Nov-30-2018 , 11:54</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Offline</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Marketing</td>
+                            <td class="font-weight-semibold fs-16">$89</td>
+                            <td>
+                              <a href="#" class="badge badge-success">Active</a>
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/2.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Computer Networking
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Nov-03-2018 , 12:50</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i> Offline</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Networks</td>
+                            <td class="font-weight-semibold fs-16">$35,978</td>
+                            <td>
+                              <a href="#" class="badge badge-success">Active</a>
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div
+                      class="tab-pane  table-responsive border-top userprof-tab"
+                      id="tab6"
+                    >
+                      <table
+                        class="table table-bordered table-hover mb-0 text-nowrap"
+                      >
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Coursed</th>
+                            <th>Category</th>
+                            <th>Fees</th>
+                            <th>Course Status</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <label class="custom-control custom-checkbox">
+                                <input
+                                  type="checkbox"
+                                  class="custom-control-input"
+                                  name="checkbox"
+                                  value="checkbox"
+                                />
+                                <span class="custom-control-label"></span>
+                              </label>
+                            </td>
+                            <td>
+                              <div class="media mt-0 mb-0">
+                                <div class="card-aside-img">
+                                  <a href="#"></a>
+                                  <img
+                                    src="/assets/images/media/2.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="media-body">
+                                  <div class="card-item-desc ml-4 p-0 mt-2">
+                                    <a href="#" class="text-dark"
+                                      ><h4 class="font-weight-semibold">
+                                        Networking
+                                      </h4></a
+                                    >
+                                    <a href="#"
+                                      ><i class="fa fa-clock-o mr-1"></i>
+                                      Nov-15-2019 , 12:45</a
+                                    ><br />
+                                    <a href="#"
+                                      ><i class="fa fa-tag mr-1"></i>Online</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td>Networking</td>
+                            <td class="font-weight-semibold fs-16">$22,765</td>
+                            <td>
+                              <a href="#" class="badge badge-danger">Expired</a>
+                            </td>
+                            <td>
+                              <a
+                                class="btn btn-success btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Edit"
+                                ><i class="fa fa-pencil"></i
+                              ></a>
+                              <a
+                                class="btn btn-danger btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Delete"
+                                ><i class="fa fa-trash-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-info btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="Save to Wishlist"
+                                ><i class="fa fa-heart-o"></i
+                              ></a>
+                              <a
+                                class="btn btn-primary btn-sm text-white"
+                                data-toggle="tooltip"
+                                data-original-title="View"
+                                ><i class="fa fa-eye"></i
+                              ></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+import Header from "@/components/header/HeaderMenuForAdmin.vue";
+
+export default {
+  components: { Header }
+};
+</script>

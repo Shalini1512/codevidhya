@@ -1,0 +1,1369 @@
+/**** Bootstrap **********/
+/*.alert {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  width: 320px !important;
+  padding-right: 28px !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+}
+.alert .button {
+  width: 24px !important;
+  height: 24px !important;
+  top: calc(50% - 2px) !important;
+  right: 4px !important;
+  transform: translateY(-50%);
+  padding: 0 !important;
+  line-height: 22px !important;
+  font-size: 16px !important;
+  text-align: center;
+  color: #444;
+  border-radius: 4px;
+  background: none;
+  text-shadow: none !important;
+  &:hover {
+    background: rgba(0,0,0,0.1);
+  }
+}*/
+/*********** Bootstrap ***********/
+/************** Vue Transitions *******/
+.transition-enter-active {
+  transition: none !important;
+  opacity: 0 !important;
+}
+
+.transition-leave-active {
+  width: 0 !important;
+  transition: none !important;
+}
+
+.transition-leave-to {
+  width: 0 !important;
+  transition: none !important;
+}
+
+.transition-enter {
+  opacity: 0 !important;
+  transition: none !important;
+}
+
+/************** End Vue Transitions *******/
+.flex-filler {
+  flex-grow: 1;
+}
+
+.singleline {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Card */
+.card-cv, .cv-card {
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-lg {
+  max-width: 480px;
+}
+
+.cardlayout {
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.cardlayout h3 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+
+.cardlayout h3 a {
+  color: #1e78ff;
+}
+
+.interactive-card {
+  cursor: pointer;
+  transition: box-shadow 300ms;
+}
+
+.interactive-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.interactive-card:active {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+  transition: all 100ms;
+}
+
+/********** Neumorphism **************/
+.neu-small {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px white;
+  border-radius: 8px;
+}
+
+html,
+body {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, p, span, div, input, button {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+body {
+  min-height: 0;
+}
+
+body * {
+  font-family: inherit;
+}
+
+#main {
+  width: 100%;
+  margin: 0;
+  padding: 56px 0 0;
+}
+
+.main-limited {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.main-inner {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/******* Backgrounds ****************
+***********************************/
+.gradient {
+  background: linear-gradient(90deg, #00eda4 0%, #6a7df1 100%);
+}
+
+/******* Colors ****************
+***********************************/
+.color-pink {
+  color: #ec296b;
+}
+
+.color-blue {
+  color: #096cf7;
+}
+
+.color-green {
+  color: #24bb41;
+}
+
+/******* Typography ****************
+***********************************/
+h1, h2, h3, h4, h5, h6, p, li, div, td {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font: normal 1rem/1.2 "Poppins", sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/************* Headings **********/
+.section-heading-medium {
+  font: 700 1.6rem/1 "Poppins";
+  margin: 0 0 16px;
+}
+
+.font-primary {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.fs-normal {
+  font-size: 1rem;
+}
+
+.fs-large {
+  font-size: 1.4rem;
+}
+
+/********** Lists ***********/
+.list li {
+  font: normal 1.2rem/1.2 "PT Sans";
+  color: #444;
+}
+
+/************ Font sizes **********/
+.text-body {
+  font: normal 1.2rem/1.2 "PT Sans";
+  color: #444;
+}
+
+/*********** Paragraphs *************/
+.p-body {
+  font: normal 1.2rem/1.2 "PT Sans";
+  margin-bottom: 16px;
+}
+
+/*********** Buttons *************/
+.button {
+  margin: 0;
+  padding: 12px 24px;
+  border: 0;
+  background: #efefef;
+}
+
+.btn-shadow {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  transition: all 200ms;
+}
+.btn-shadow:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.btn-shadow:active {
+  transition: none;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+/*********** BUTTONS ************/
+.cv-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 40px;
+  margin: 0;
+  padding: 12px 24px;
+  background: #7700ff;
+  border: none;
+  border-radius: 4px;
+  transition: all 200ms;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  font: normal 1rem/1 "Poppins";
+  color: #fff;
+}
+.cv-button.noshadow {
+  box-shadow: none;
+}
+.cv-button.noshadow:hover, .cv-button.noshadow:active {
+  opacity: 0.9;
+  box-shadow: none;
+}
+.cv-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.cv-button:active {
+  outline: none;
+  transition: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.cv-button:focus {
+  outline: none;
+}
+.cv-button.negative {
+  background: #d80707;
+}
+.cv-button.neutral {
+  background: rgba(0, 0, 0, 0.5);
+}
+.cv-button[disabled], .cv-button:disabled {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.4;
+}
+.cv-button[disabled]:hover, .cv-button:disabled:hover {
+  opacity: 0.4;
+}
+.cv-button.flat, .cv-button.borderless {
+  background: transparent;
+  color: #444;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cv-button.flat:hover, .cv-button.borderless:hover {
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+}
+.cv-button.flat:active, .cv-button.borderless:active {
+  outline: none;
+  transition: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.cv-button.borderless {
+  border: none;
+}
+.cv-button.borderless:active {
+  box-shadow: none;
+}
+.cv-button.square {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  text-align: center;
+  line-height: 32px;
+}
+.cv-button.gradient-corner {
+  border-radius: 6px;
+  border-top-left-radius: 16px;
+  /*background: linear-gradient(90deg, rgb(117, 14, 252), rgb(135, 44, 255) 100%)*/
+  background: #E75160;
+}
+.cv-button.progress-btn.ongoing {
+  opacity: 0.5;
+}
+.cv-button.progress-btn.ongoing img {
+  width: 18px;
+  opacity: 1;
+}
+.cv-button.progress-btn img {
+  width: 0;
+  height: 18px;
+  opacity: 0;
+  transition: all 300ms;
+}
+
+/*********** Dropdown menus **********/
+.cv-context-menu {
+  position: absolute;
+  min-width: 160px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1000;
+}
+.cv-context-menu a {
+  display: block;
+  padding: 12px 16px;
+  transition: all 200ms;
+}
+.cv-context-menu a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.cv-context-menu.hidden {
+  display: none;
+}
+
+/******** Star rating ******/
+.filled-stars {
+  -webkit-text-stroke: 0px transparent !important;
+  text-shadow: none !important;
+  color: #e7c70d !important;
+}
+
+/*********** MODAL *****************************/
+.cv-modal, .cv-dialog {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10001;
+  opacity: 0;
+  transition: all 200ms;
+}
+.cv-modal.is-transitioning, .cv-dialog.is-transitioning {
+  display: block !important;
+}
+.cv-modal > div, .cv-dialog > div {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 95%;
+  margin-top: 32px;
+  background: #fff;
+  border-radius: 4px;
+  transition: all 150ms ease;
+  overflow: hidden;
+}
+.cv-modal.visible, .cv-dialog.visible {
+  display: block;
+  opacity: 1;
+}
+.cv-modal.visible > div, .cv-dialog.visible > div {
+  margin-top: 0;
+}
+.cv-modal.normal > div, .cv-dialog.normal > div {
+  width: 400px;
+}
+.cv-modal.medium > div, .cv-dialog.medium > div {
+  max-width: 600px;
+  min-width: 300px;
+  width: 100%;
+}
+.cv-modal.large > div, .cv-dialog.large > div {
+  max-width: 800px;
+  min-width: 300px;
+  width: 100%;
+}
+.cv-modal.full > div, .cv-dialog.full > div {
+  width: 98%;
+  height: 95%;
+}
+.cv-modal .header, .cv-dialog .header {
+  padding: 16px;
+}
+.cv-modal .header h3, .cv-dialog .header h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+.cv-modal .body, .cv-dialog .body {
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
+}
+.cv-modal .footer, .cv-dialog .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 8px 16px;
+}
+.cv-modal .footer button, .cv-dialog .footer button {
+  margin-left: 8px;
+}
+.cv-modal .footer button:first-of-type, .cv-dialog .footer button:first-of-type {
+  margin-left: 0;
+}
+
+.cv-dialog > div {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.cv-dialog h3 {
+  padding: 24px 24px 0;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+.cv-dialog h3 i.error {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 16px;
+  background: rgba(255, 0, 0, 0.2);
+}
+.cv-dialog p {
+  padding: 24px 24px 0;
+  font-size: 1.2rem;
+}
+.cv-dialog input {
+  margin: 24px 24px 0;
+}
+.cv-dialog .footer {
+  margin-top: 24px;
+  border-top: none;
+}
+
+#fatal-error-dialog button {
+  margin: 16px;
+}
+
+.offscreen-modal-cv {
+  position: fixed;
+  left: 10000px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100000;
+}
+
+.modal-box-cv {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+  background-color: #eee;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+.modal-box-cv.lightbox-cv {
+  /* Used for lightbox */
+  position: relative;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-close-btn-cv {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.modal-close-btn-cv:hover {
+  opacity: 0.8;
+}
+
+.modal-close-btn-cv i {
+  color: #000;
+  line-height: 32px;
+}
+
+.modal-cv-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-box-cv h3 {
+  margin: 0;
+  padding: 0;
+  font: normal 1.5rem "Poppins", sans-serif;
+}
+
+.modal-cv-close {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.modal-cv-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-cv-content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  min-height: 0;
+}
+
+/********** FORMS *************/
+select.cv-input {
+  height: 38px;
+  margin: 0;
+  padding: 0 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  line-height: 38px;
+}
+
+input,
+input[type=text].cv-input,
+input[type=number].cv-input,
+input[type=password].cv-input,
+textarea.cv-input,
+select.cv-input {
+  height: 38px;
+  margin: 0;
+  padding: 0 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  line-height: 38px;
+}
+
+.cv-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.cv-input-group label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.cv-input-group label input[type=checkbox] {
+  height: auto;
+  margin-right: 16px;
+}
+.cv-input-group .error {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: #f00;
+}
+.cv-input-group select {
+  margin: 0;
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.cv-input-group input[type=text] {
+  margin: 0;
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.cv-file-input-group {
+  position: relative;
+}
+.cv-file-input-group input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.cv-file-input-group label {
+  display: flex;
+  flex-direction: row;
+  min-width: 160px;
+  height: 38px;
+}
+.cv-file-input-group label .selected-file {
+  flex-grow: 1;
+  padding: 0 8px;
+  line-height: 38px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #7700ff;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.cv-file-input-group label .choose-file {
+  padding: 0 16px;
+  line-height: 38px;
+  background: #7700ff;
+  color: #fff;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.form-error {
+  visibility: hidden;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  color: #f00;
+}
+
+/************ Tab layout ***********/
+.cv-tablayout .tabs {
+  display: flex;
+  flex-direction: row;
+}
+.cv-tablayout .tabs > div {
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 200ms;
+}
+.cv-tablayout .tabs > div:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.cv-tablayout .tabs > div:active {
+  background: rgba(0, 0, 0, 0.15);
+}
+.cv-tablayout .tabs.stretch > div {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.cv-tablayout .tabs .active {
+  background: rgba(0, 0, 0, 0.1);
+}
+.cv-tablayout .content {
+  display: none;
+}
+.cv-tablayout .content.active {
+  display: block;
+}
+
+/************ EMPTY STATE MESSAGES ***********/
+.cv-empty-state-message {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.cv-empty-state-message p {
+  text-align: center;
+}
+
+/**************** SimpleBar ****************/
+/*!
+ *
+ *         SimpleBar.js - v2.6.1
+ *         Scrollbars, simpler.
+ *         https://grsmto.github.io/simplebar/
+ *
+ *         Made by Adrien Grsmto from a fork by Jonathan Nicol
+ *         Under MIT License
+ *
+ */
+[data-simplebar] {
+  position: relative;
+  z-index: 0;
+  overflow: hidden !important;
+  max-height: inherit;
+  -webkit-overflow-scrolling: touch;
+  /* Trigger native scrolling for mobile, if not supported, plugin is used. */
+}
+
+[data-simplebar=init] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.simplebar-scroll-content {
+  overflow-x: hidden !important;
+  overflow-y: scroll;
+  min-width: 100% !important;
+  max-height: inherit !important;
+  -webkit-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+}
+
+.simplebar-content {
+  overflow-y: hidden !important;
+  overflow-x: scroll;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+  min-height: 100% !important;
+}
+
+.simplebar-track {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 11px;
+}
+
+.simplebar-scrollbar {
+  position: absolute;
+  right: 2px;
+  width: 7px;
+  min-height: 10px;
+}
+
+.simplebar-scrollbar:before {
+  position: absolute;
+  content: "";
+  background: black;
+  border-radius: 7px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.simplebar-track:hover .simplebar-scrollbar:before,
+.simplebar-track .simplebar-scrollbar.visible:before {
+  /* When hovered, remove all transitions from drag handle */
+  opacity: 0.5;
+  -webkit-transition: opacity 0 linear;
+  transition: opacity 0 linear;
+}
+
+.simplebar-track.vertical {
+  top: 0;
+}
+
+.simplebar-track.vertical .simplebar-scrollbar:before {
+  top: 2px;
+  bottom: 2px;
+}
+
+.simplebar-track.horizontal {
+  left: 0;
+  width: auto;
+  height: 11px;
+}
+
+.simplebar-track.horizontal .simplebar-scrollbar:before {
+  height: 100%;
+  left: 2px;
+  right: 2px;
+}
+
+.horizontal.simplebar-track .simplebar-scrollbar {
+  right: auto;
+  top: 2px;
+  height: 7px;
+  min-height: 0;
+  min-width: 10px;
+  width: auto;
+}
+
+.simplebar-scrollbar {
+  width: 4px !important;
+}
+
+.simplebar-scrollbar:before {
+  border-radius: 0 !important;
+}
+
+.simplebar-track:hover .simplebar-scrollbar:before,
+.simplebar-track .simplebar-scrollbar.visible:before {
+  opacity: 0.2 !important;
+}
+
+/*********** PROGRESS BAR ************/
+.progress {
+  position: relative;
+  background: #d5f5e3;
+  margin-bottom: 0;
+}
+
+.progress-bar {
+  background: #58d68d;
+}
+
+.progress p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 0;
+  font: normal 12px/1 "Poppins";
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+/*************** Preloader ****************/
+#preloader {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 99999999;
+}
+
+#preloader-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.preloader-container {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.preloader-container > div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bounceball {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 32px;
+}
+
+.bounceball:before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fbae17;
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bounce 500ms alternate infinite ease;
+  animation: bounce 500ms alternate infinite ease;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: 64px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    -webkit-transform: scaleX(2);
+    transform: scaleX(2);
+  }
+  35% {
+    height: 32px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes bounce {
+  0% {
+    top: 64px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    -webkit-transform: scaleX(2);
+    transform: scaleX(2);
+  }
+  35% {
+    height: 32px;
+    border-radius: 50%;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
+/*************************spinning loader*****************/
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 32px 32px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #000;
+  margin: -3px 0 0 -3px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*********** Bars loader **************/
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+/********* Progress overlay ********/
+.cv-progress-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 999999;
+  background: rgba(0, 0, 0, 0.4);
+}
+.cv-progress-overlay > div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*********************************************/
+/**************** Expandable layout *********/
+.cv-expandable-layout {
+  overflow: hidden;
+}
+
+.cv-expandable-layout > div {
+  position: relative;
+}
+
+.cv-expandable-hidden {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  transition: all 300ms;
+}
+
+/***************** QUIZ ************************/
+.lms-quiz-mcq, .lms-quiz-fwo {
+  background: #00bb6417;
+  margin-bottom: 32px;
+  padding: 16px 32px;
+  border-radius: 16px;
+}
+
+.lms-quiz-mcq h3, .lms-quiz-fwo h3 {
+  font: normal 2em/1 "Poppins", sans-serif;
+}
+
+.lms-mcq-options button, .lms-fwo-options button {
+  margin-right: 8px;
+  padding: 12px 16px;
+  background: #dfdfdf;
+  color: #444;
+  font: normal 1rem/1 "Poppins", sans-serif;
+  border-radius: 32px;
+}
+
+.lms-mcq-options button.lms-mcq-selected-answer {
+  background: #008044;
+  color: #fff !important;
+}
+
+.lms-mcq-wrong-answer {
+  background: #80030a !important;
+  color: #fff !important;
+}
+
+.lms-mcq-options button:focus, .lms-fwo-options button:focus {
+  outline: none;
+}
+
+.submit-mcq-btn, .submit-fwo-btn {
+  background: black;
+  color: #fff;
+  border-radius: 16px;
+  padding: 12px 16px;
+  font-size: 1rem;
+}
+
+button.submit-mcq-btn:focus, button.submit-fwo-btn:focus {
+  outline: none;
+}
+
+p.lms-correct-ans-feedback,
+p.lms-wrong-ans-feedback {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 0 !important;
+  margin-top: 16px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+p.lms-description, p.mcq-description {
+  display: flex;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 0 !important;
+  margin-top: 16px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  align-items: center;
+  display: none;
+}
+
+.lms-correct-ans-feedback > .fa-check-circle,
+.lms-wrong-ans-feedback > .fa-times-circle {
+  margin-right: 16px;
+  font-size: 32px;
+}
+
+.lms-correct-ans-feedback > .fa-check-circle {
+  color: #008044;
+}
+
+.lms-wrong-ans-feedback > .fa-times-circle {
+  color: #f00;
+}
+
+.fwo-statement span {
+  margin-right: 4px;
+  font-size: 1rem !important;
+}
+
+.fwo-blank {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  height: 32px;
+  min-width: 72px;
+  padding: 0 4px;
+  background: #dfdfdf;
+  border: 2px solid rgba(0, 0, 0, 0.308);
+  border-radius: 4px;
+  text-align: center;
+  font: normal 1rem/32px "Poppins", sans-serif !important;
+}
+
+.fwo-blank-small {
+  min-width: 32px !important;
+}
+
+.fwo-blank-large {
+  min-width: 190px;
+}
+
+.fwo-active-blank {
+  border: 2px solid #05bb66;
+}
+
+/******************* CODE EDITOR *******************/
+#lesson-content-actual .CodeMirror-line span {
+  font-size: 1rem !important;
+}
+
+.lms-editor-container {
+  margin: 0 32px 32px;
+}
+
+.lms-editor-container .CodeMirror {
+  background: #fafafa;
+  height: 100%;
+}
+
+.lms-editor-container .CodeMirror .CodeMirror-gutters {
+  background: #f7f7f7;
+}
+
+.lms-editor-tabs {
+  display: flex;
+  height: 32px;
+  background: #1ABC9C;
+}
+
+.lms-editor-tabs a {
+  display: block;
+  padding: 0 16px;
+  font: normal 1rem/32px "Poppins", sans-serif !important;
+  text-decoration: none !important;
+  color: #fff !important;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.lms-editor-tabs a.lms-editor-active-tab {
+  border-bottom: 4px solid #148F77;
+}
+
+.lms-editor-tabs button {
+  height: 32px;
+  margin: 0;
+  padding: 0 32px;
+  line-height: 32px;
+  background: #0E6251;
+}
+
+.lms-editors-wrapper {
+  position: relative;
+  height: 218px;
+}
+
+.lms-editors-wrapper > div {
+  width: 100%;
+  height: 218px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.lms-editors-wrapper > div {
+  z-index: -10;
+}
+
+.lms-editors-wrapper > div.active-lms-editor-tab-content {
+  z-index: 1;
+}
+
+.lms-editor-output {
+  width: 100%;
+  height: 200px;
+  display: none;
+  box-sizing: border-box;
+  border: 2px solid #efefef;
+  overflow: auto;
+}
+
+.lms-html-render {
+  height: 150px;
+  margin-bottom: 32px;
+  border: 2px solid #dfdfdf;
+}
+
+/************* Quiz *****************/
+.quiz-item {
+  margin-bottom: 24px;
+  padding: 16px 24px 24px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.quiz-item h3 {
+  margin: 0 0 16px;
+}
+.quiz-item .qtext {
+  margin-bottom: 16px;
+}
+.quiz-item .option {
+  min-width: 200px;
+  border-radius: 4px;
+  text-align: left;
+}
+.quiz-item .explanation {
+  padding-top: 24px;
+}
+
+@media screen and (max-width: 800px) {
+  .main-limited {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

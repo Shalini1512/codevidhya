@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+body {
+	background-color: #555;
+	font-family: 'Poppins';
+}
+main {
+	margin: auto;
+	background-color: #f3f7ff;
+	min-height: 100vh;
+	width: 794px;
+	height: 2246px;
+}
+#page-1, #page-2 {
+	padding: 45px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 1123px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+#logo {
+	height: 75px;
+	margin: 10px auto;
+	display: block;
+}
+p.info-text {
+	margin: 20px auto;
+	font-size: 16px;
+}
+#skills {
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border-radius: 10px;
+}
+.v-text {
+	padding: 0 !important;
+	font-size: 24px;
+	-webkit-writing-mode: vertical-lr;
+	    -ms-writing-mode: tb-lr;
+	        writing-mode: vertical-lr;
+	-webkit-text-orientation: mixed;
+	        text-orientation: mixed;
+	-webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	        transform: rotate(180deg);
+	color: #bebebe;
+}
+#skill-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+#skill-block .yellow-box {
+	margin: 10px 0;
+	padding: 20px;
+	width: 600px;
+	background-color: #f3c80b;
+	border-radius: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	font-size: 14px;
+}
+#skill-block .yellow-box:first-of-type {
+	margin-top: 30px;
+}
+#skill-block .yellow-box:last-of-type {
+	margin-bottom: 30px;
+}
+.yellow-box div {
+	width: 380px;
+}
+.icon {
+	height: 40px;
+}
+.circular-chart {
+	height: 100px;
+	display: block;
+	max-width: 80%;
+	max-height: 250px;
+}
+.circle-bg {
+  	fill: none;
+  	stroke: #caa605f3;
+  	stroke-width: 1.8;
+}
+.circle {
+  	fill: none;
+	stroke: #fff;
+  	stroke-width: 2.8;
+  	stroke-linecap: round;
+}
+.percentage {
+	fill: #000;
+	font-size: 8px;
+	font-weight: bold;
+	text-anchor: middle;
+}
+</style>
+</head>
+<body>
+	<main>
+		<div id="page-1">
+			<div>
+				<img src="https://test.codevidhya.com/assets/psycometric_icons/logo.png" id="logo">
+				<p class="info-text"><strong>Congratualtions!</strong> Based on performance in Demo Session measured by Codevidhya visual learning algorithms and live teacher feedback, we found <%=studentName %> capable of being a game changer in this tech-driven world.</p>				
+				<p class="info-text">They have great potential to make it big by harnessing their 21st Century Skills and be the best version of themelves.</p>
+				<div id="skills">
+					<h2 class="v-text">Your Kids Progress on 21<sup>st</sup> Century</h2>
+					<div id="skill-block">
+						<div class="yellow-box">
+							<img src="https://test.codevidhya.com/assets/psycometric_icons/Communication icon.png" class="icon">
+							<div>
+								<h2>Communtication</h2>
+								<p>Your kid was exceptionally good at expressing their thoughts and ideas to the teacher and following teacher's instructions, exhibiting great communication skills.</p>
+							</div>
+							<svg viewBox="0 0 36 36" class="circular-chart orange">
+								<path class="circle-bg"
+								d="M18 2.0845
+									a 15.9155 15.9155 0 0 1 0 31.831
+									a 15.9155 15.9155 0 0 1 0 -31.831"
+								/>
+								<path class="circle"
+								stroke-dasharray="<%=skills[0] %>, 100"
+								d="M18 2.0845
+									a 15.9155 15.9155 0 0 1 0 31.831
+									a 15.9155 15.9155 0 0 1 0 -31.831"
+								/>
+								<text x="18" y="20.35" class="percentage"><%=skills[0] %>%</text>
+							</svg>
+						</div>
+						<div class="yellow-box">
+							<img src="https://test.codevidhya.com/assets/psycometric_icons/Creativity.png" class="icon">
+							<div>
+								<h2>Creativity</h2>
+								<p>Your kid did assigned tasks and solved class activities in record time by creatively working on solutions, exhibiting amazing creativity.</p>
+							</div>
+							<svg viewBox="0 0 36 36" class="circular-chart orange">
+								<path class="circle-bg"
+								d="M18 2.0845
+									a 15.9155 15.9155 0 0 1 0 31.831
+									a 15.9155 15.9155 0 0 1 0 -31.831"
+								/>
+								<path class="circle"
+								stroke-dasharray="<%=skills[1] %>, 100"
+								d="M18 2.0845
+									a 15.9155 15.9155 0 0 1 0 31.831
+									a 15.9155 15.9155 0 0 1 0 -31.831"
+								/>
+								<text x="18" y="20.35" class="percentage"><%= skills[1] %>%</text>
+							</svg>
+						</div>
+						<div class="yellow-box">
+							<img src="https://test.codevidhya.com/assets/psycometric_icons/Critical Thinking.png" class="icon">
+							<div>
+								<h2>Critical Thinking</h2>
+								<p>Your kid was deeply focused and solution-oriented in class and worked dedicatedly towards finding solutions, exhibiting logical and critical thinking skills.</p>
+							</div>
+							<svg viewBox="0 0 36 36" class="circular-chart orange">
+								<path class="circle-bg"
+								d="M18 2.0845
+									a 15.9155 15.9155 0 0 1 0 31.831
+									a 15.9155 15.9155 0 0 1 0 -31.831"
+								/>
+								<path class="circle"
+								stroke-dasharray="<%= skills[2] %>, 100"
+								d="M18 2.0845
+									a 15.9155 15.9155 0 0 1 0 31.831
+									a 15.9155 15.9155 0 0 1 0 -31.831"
+								/>
+								<text x="18" y="20.35" class="percentage"><%= skills[2] %>%</text>
+							</svg>
+						</div>
+						<div class="yellow-box">
+							<img src="https://test.codevidhya.com/assets/psycometric_icons/Collaboration.png" class="icon">
+							<div>
+								<h2>Collaboration</h2>
+								<p>Your kid was extremely deliberate and methodical in in-class problem solving and worked well in collboration with the teacher towards successful session, exhibing collboration skills.</p>
+							</div>
+							<svg viewBox="0 0 36 36" class="circular-chart orange">
+								<path class="circle-bg"
+								d="M18 2.0845
+									a 15.9155 15.9155 0 0 1 0 31.831
+									a 15.9155 15.9155 0 0 1 0 -31.831"
+								/>
+								<path class="circle"
+								stroke-dasharray="<%= skills[3] %>, 100"
+								d="M18 2.0845
+									a 15.9155 15.9155 0 0 1 0 31.831
+									a 15.9155 15.9155 0 0 1 0 -31.831"
+								/>
+								<text x="18" y="20.35" class="percentage"><%= skills[3] %>%</text>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src="https://test.codevidhya.com/assets/psycometric_icons/Codevidhya Logo.png" style="text-align:center;">
+		</div>
+		<div id="page-2">
+			<div>
+				<img src="https://test.codevidhya.com/assets/psycometric_icons/Demo Session Feedback Form Logo_A.png" style="display: block; margin-left: auto">
+				<br><br><br>
+				<p>Your child is uniquely gifted. Working towards enhancing their will be further help them to be the best version of themselves.</p>
+				<br><br>
+				<p>As a substantial step towards being a skilled 21<sup>st</sup> century global citizen, early childhood coding is critical for them. Coding improves abstract thinking +23% to enable them to rreach their creative peak. In coding, they will learn User inteface and design thinking to develop deep empathy for other viewpoints.</p>
+				<br><br>
+				<p>You should be very proud of <%= studentName %>. You can now share this report widely with your friends and family so they're equally proud.</p>
+				<br><br><br>
+				<h2 style="color: #29a8d6; text-align: center; width: 80%; margin: auto">Below are the suggested courses for your child to enhance their <%= enhanceSkills %></h2>
+				<br><br>
+				<div style="display: flex; justify-content: space-around;">
+					<img src="<%= course1 %>" style="height: 350px;">
+					<img src="<%= course2 %>" style="height: 350px;">
+				</div>
+			</div>
+			<img src="https://test.codevidhya.com/assets/psycometric_icons/Codevidhya Logo.png" style="text-align:center;" >
+		</div>
+	</main>
+</body>
+</html>

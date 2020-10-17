@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<meta name="viewport" content="width=1280px,initial-scale=1" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>Codevidhya | Teaching Kids To Code</title>
+
+    <meta
+      content="Learn HTML, CSS, JavaScript, Python, Database with Codevidhya"
+      name="description"
+    />
+    <link
+      href="/assets/plugins/bootstrap-4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="/assets/css/style.css?v=2" rel="stylesheet" />
+    <link href="/assets/css/cv-css/style-cv.css" rel="stylesheet" />
+    <link href="/assets/css/cv-css/style.css?v=2" rel="stylesheet" />
+       <!--Scrollbar CSS File-->
+       <link href="/assets/css/cv-css/scrollBar.css"
+       rel="stylesheet"
+       type="text/css"
+       />    
+    <!--End Scrollbar-->
+  
+    <link href="/assets/css/skin-modes.css" rel="stylesheet" />
+    <link href="/assets/css/icons.css" rel="stylesheet" />
+
+    <!--link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" /-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="/assets/plugins/horizontal-menu/horizontal-menu.css"
+      rel="stylesheet"
+    />
+    <link href="/assets/plugins/select2/select2.min.css" rel="stylesheet" />
+   <!-- <link href="/assets/plugins/cookie/cookie.css" rel="stylesheet" />-->
+    <link
+      href="/assets/plugins/owl-carousel/owl.carousel.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/plugins/scroll-bar/jquery.mCustomScrollbar.css"
+      rel="stylesheet"
+    />
+    <!-- Time picker Plugin -->
+    <link
+      href="/assets/plugins/time-picker/jquery.timepicker.css"
+      rel="stylesheet"
+    />
+  <!-- view pdf-->
+  <!--<script src="/assets/js/pdfViewer/pdf.js"></script>-->
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+
+  <!--end pdf-->
+    <!-- Date Picker Plugin -->
+    <link href="/assets/plugins/date-picker/spectrum.css" rel="stylesheet" />
+
+    <!--font awesome-->
+    <link href="/assets/fa/css/all.css" rel="stylesheet" />
+    <!--script src="/assets/fa/js/all.js"></script-->
+    <!--end font awesome-->
+    <link href="/assets/plugins/pscrollbar/pscrollbar.css" rel="stylesheet" />
+    <link href="/assets/plugins/tabs/tabs.css" rel="stylesheet" />
+    <link
+      href="/assets/switcher/css/switcher.css"
+      rel="stylesheet"
+      id="switcher-css"
+      type="text/css"
+      media="all"
+    />
+ 
+    <link
+      id="theme"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/assets/color-skins/codevidhya.css?v=1"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="/assets/plugins/notify/css/jquery.growl.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/cv-css/prism.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/js/codemirror/lib/codemirror.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/cv-css/codemirror-colorpicker.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/js/codemirror/css/show-hint.css"
+    />
+    <!-- file Uploads -->
+    <link
+      href="/assets/plugins/fileuploads/css/fileupload.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!--rating-->
+    <link
+      href="/assets/bootstrap-star-rating/css/star-rating.min.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/assets/bootstrap-star-rating/themes/krajee-fas/theme.min.css"
+      media="all"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--end rating-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-89783824-2"
+    ></script>
+    <!--cv script-->
+    <!--end cv script-->
+    <!--star rating css-->
+    <!--<link  href="/assets/bootstrap-star-rating/css/star-rating.min.css"
+    media="all" rel="stylesheet" type="text/css">
+    <link href="/assets/bootstrap-star-rating/themes/krajee-fas/theme.min.css"
+    media="all" rel="stylesheet" type="text/css">
+    <script src="/assets/bootstrap-star-rating/js/star-rating.min.js" type="text/javascript"></script>
+    <script src="/assets/bootstrap-star-rating/themes/krajee-fas/theme.min.js" type="text/javascript"></script>-->
+    <!--end star rating css-->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-89783824-2");
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.5/jspdf.plugin.autotable.min.js"></script>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <!--css animation for quiz-->
+    <!--script src="/assets/js/animation/confetti.js"></!--script-->
+    <script src="/assets/js/animation/confetti.min.js"></script>
+    <!--end css animation-->
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      if (
+        !~window.location.href.indexOf("/projects/") &&
+        !~window.location.href.indexOf("/projects/preview")
+      ) {
+        var Tawk_API = Tawk_API || {},
+          Tawk_LoadStart = new Date();
+        (function() {
+          var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+          s1.async = false;
+          s1.src = "https://embed.tawk.to/5811c3b47d6b3d6f0eb24207/default";
+          s1.charset = "UTF-8";
+          s1.setAttribute("crossorigin", "*");
+          s0.parentNode.insertBefore(s1, s0);
+        })();
+      }
+    </script>
+    <!--End of Tawk.to Script-->
+  </head>
+
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but Codevidhya doesn't work without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/plugins/bootstrap-4.3.1/js/popper.min.js"></script>
+    <script src="/assets/plugins/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.sparkline.min.js"></script>
+    <script src="/assets/js/circle-progress.min.js"></script>
+    <script src="/assets/plugins/rating/jquery.rating-stars.js"></script>
+    <script src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="/assets/plugins/horizontal-menu/horizontal-menu.js"></script>
+    <script src="/assets/plugins/counters/counterup.min.js"></script>
+    <script src="/assets/plugins/counters/waypoints.min.js"></script>
+    <script src="/assets/plugins/counters/numeric-counter.js"></script>
+    <script src="/assets/js/jquery.touchSwipe.min.js"></script>
+    <script src="/assets/plugins/select2/select2.full.min.js"></script>
+    <script src="/assets/js/select2.js"></script>
+    <!--<script src="/assets/plugins/cookie/jquery.ihavecookies.js"></script>-->
+    <script src="/assets/plugins/cookie/cookie.js"></script>
+    <script src="/assets/js/sticky.js"></script>
+    <script src="/assets/plugins/tabs/jquery.multipurpose_tabcontent.js"></script>
+    <script src="/assets/js/tabs.js"></script>
+    <script src="/assets/plugins/pscrollbar/pscrollbar.js"></script>
+    <script src="/assets/plugins/pscrollbar/pscroll.js"></script>
+    <script src="/assets/plugins/scroll-bar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/assets/js/swipe.js"></script>
+    <script src="/assets/js/owl-carousel.js"></script>
+    <script src="/assets/plugins/notify/js/jquery.growl.js?v=1"></script>
+    <script src="/assets/js/typewritter.js"></script>
+
+    <script src="/assets/plugins/notify/js/rainbow.js"></script>
+    <script src="/assets/js/cv/cv-utils.js?v=2"></script>
+    <script src="/assets/js/cv/libraries.js"></script>
+    
+    <!--ckeditor-->
+    <script src="/assets/js/ckeditor/ckeditor.js"></script>
+    <!--end ckeditor-->
+    <!-- Timepicker js -->
+    <script src="/assets/plugins/time-picker/jquery.timepicker.js"></script>
+    <script src="/assets/plugins/time-picker/toggles.min.js"></script>
+
+    <!-- Datepicker js -->
+    <script src="/assets/plugins/date-picker/spectrum.js"></script>
+    <script src="/assets/plugins/date-picker/jquery-ui.js"></script>
+    <script src="/assets/plugins/input-mask/jquery.maskedinput.js"></script>
+
+    <!--Rating script-->
+    <script
+      src="/assets/bootstrap-star-rating/js/star-rating.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/assets/bootstrap-star-rating/themes/krajee-fas/theme.min.js"
+      type="text/javascript"
+    ></script>
+
+    <!--end Rating script-->
+
+    <script src="/assets/js/custom.js?v=1"></script>
+
+    <script async defer src="/assets/js/cv/prism.js"></script>
+    <script src="/assets/js/codemirror/lib/codemirror.js"></script>
+    <script async defer src="/assets/js/codemirror/mode/xml/xml.js"></script>
+    <script async defer src="/assets/js/codemirror/mode/sql/sql.js"></script>
+    <script
+      async
+      defer
+      src="/assets/js/codemirror/plugins/xml-fold.js"
+    ></script>
+    <script
+      async
+      defer
+      src="/assets/js/codemirror/plugins/closetag.js"
+    ></script>
+    <script
+      async
+      defer
+      src="/assets/js/codemirror/plugins/closebrackets.js"
+    ></script>
+    <script
+      async
+      defer
+      src="/assets/js/codemirror/plugins/active-line.js"
+    ></script>
+    <script
+      async
+      defer
+      src="/assets/js/codemirror/plugins/matchtags.js"
+    ></script>
+    <script async defer src="/assets/js/codemirror/mode/css/css.js"></script>
+    <script
+      async
+      defer
+      src="/assets/js/codemirror/plugins/show-hint.js"
+    ></script>
+    <script
+      async
+      defer
+      src="/assets/js/codemirror/plugins/sql-hint.js"
+    ></script>
+    <script
+      async
+      defer
+      src="/assets/js/codemirror/mode/javascript/javascript.js"
+    ></script>
+    <script
+      async
+      defer
+      src="/assets/js/codemirror/mode/htmlmixed/htmlmixed.js"
+    ></script>
+    <script
+      async
+      defer
+      src="/assets/js/codemirror/mode/python/python.js"
+    ></script>
+    <script
+      async
+      defer
+      src="/assets/js/codemirror/codemirror-colorpicker.min.js"
+    ></script>
+    <script
+      async
+      defer
+      src="/assets/js/codemirror/plugins/autorefresh.js"
+    ></script>
+    <script src="/assets/js/cv/cvDatabase.js"></script>
+    <script src="/assets/js/cv/lms-content.js"></script>
+
+    <!-- Vertical scroll bar js-->
+    <script src="/assets/plugins/vertical-scroll/jquery.bootstrap.newsbox.js"></script>
+    <script src="/assets/plugins/vertical-scroll/vertical-scroll.js"></script>
+
+    <!-- built files will be auto injected -->
+  </body>
+</html>

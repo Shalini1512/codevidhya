@@ -1,0 +1,224 @@
+
+  
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <style>
+    .invoice-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color: #555;
+    }
+    
+    .invoice-box table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+    }
+    
+    .invoice-box table td {
+        padding: 5px;
+        vertical-align: top;
+    }
+    
+    .invoice-box table tr td:nth-child(2) {
+        text-align: right;
+    }
+    
+    .invoice-box table tr.top table td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.top table td.title {
+        font-size: 45px;
+        line-height: 45px;
+        color: #333;
+    }
+    
+    .invoice-box table tr.information table td {
+        padding-bottom: 40px;
+    }
+    
+    .invoice-box table tr.heading td {
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+        text-align: right;
+    }
+    .invoice-box table tr.heading td:nth-child(1){
+        text-align:left !important;
+    }
+    .invoice-box table tr.item td
+    {
+        text-align:right;
+    }
+    .invoice-box table tr.item td:nth-child(1)
+    {
+        text-align:left;
+    }
+
+    .invoice-box table tr.details td {
+        padding-bottom: 20px;
+    }
+    
+    .invoice-box table tr.item td{
+        border-bottom: 1px solid #eee;
+    }
+    
+    .invoice-box table tr.item.last td {
+        border-bottom: none;
+    }
+    
+    .invoice-box table tr.total td:nth-child(1) {
+        /* border-top: 2px solid #eee; */
+        font-weight: bold;
+        text-align: right;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .invoice-box table tr.top table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        
+        .invoice-box table tr.information table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+    
+    /** RTL **/
+    .rtl {
+        direction: rtl;
+        font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    }
+    
+    .rtl table {
+        text-align: right;
+    }
+    
+    .rtl table tr td:nth-child(2) {
+        text-align: left;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="4">
+                    <table>
+                        <tr>
+                            <td class="title">
+                                <img src="https://codevidhya.com/assets/images/png/codevidhya_logo.png" style="width:100%; max-width:300px;">
+                            </td>
+                            
+                            <td>
+                                <b>Codevidhya India Private Limited</b><br>
+                               2<sup>nd</sup> Floor, 96, Officers Campus, Sirsi Road<br>
+                                Vaishali Nagar,<br>
+                                Jaipur(Raj) 302021
+                            <br>
+                            India <br> <br>
+                            Mobile: +91-7357286330 <br>
+                            Email: contact@codevidhya.com<br/>
+                            <a href="https://codevidhya.com/">www.codevidhya.com</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr class="information">
+                <td colspan="4">
+                    <table>
+                        <tr>
+                            <td>
+                                <b> BILL TO </b> <br>
+                                <%= BillTo.name %> <br>
+                                <%= BillTo.address %> <br>
+                                <%= BillTo.city %>,
+                                <%= BillTo.state %> <br>
+                               Email: <%= BillTo.email %><br> 
+                               Contact: <%= BillTo.phone %>
+                            </td>
+                            
+                            <td>
+                                <b> INVOICE DETAILS</b> <br>
+                                Invoice #:   <%= Invoice.id %> <br>
+                                Created:  <%= Invoice.date %> <br>
+                                Amount Paid:  <span>&#8377</span><%= Payment.amountDue 
+                                %> <br>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Product information -->
+            <tr><td style="max-width: 350px; white-space: nowrap;">
+                Transaction ID: <%= Invoice.transcationId %> <br>
+            </td></tr>
+            <tr class="heading">
+                <td>
+                    Product Name
+                </td>
+                
+                <td>
+                    Qty
+                </td>
+                <td>
+                    Unit Price(<span>&#8377</span>)
+                </td>
+                <td>
+                    Price(<span>&#8377</span>)
+                </td>
+            </tr>
+            <% Products.forEach(function (Product,index){ %>
+            <tr class="item">
+                <td>
+                    <%= Product.name %>
+                </td>
+                
+                <td>
+                    <%= Product.quantity %>
+                </td>
+                <td>
+                      <%= Product.unitPrice %>
+                </td>
+                <td>
+                     <%= Product.amount %>
+                </td>
+            </tr>
+            
+            <% }) %>
+        <tr class="total" >
+               <td class="suminfo" colspan="3">
+                   Total: <br>(-) 
+                    Discount : <br> (-)
+                   Coupon Discount <br >
+                   Grand Total: <br>
+               </td>
+                <td colspan=3 >
+                    <span>&#8377</span> <%= Payment.totalAmount %> <br>
+                    <span>&#8377</span>  <%= Payment.booksDiscount %><br>
+                     <span>&#8377</span> <%= Payment.discount %><br>
+                   <span>&#8377</span>  <%= Payment.amountDue %>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <style type="text/css" >
+        body {
+        background: grey;
+        /* margin-top: 120px;
+        margin-bottom: 120px; */
+    }
+    .company-info{
+        font-size: small;
+    }
+    img
+    {
+        width:250px;
+        height:auto;
+    }
+    
+     .fa {
+      padding: 20px;
+      font-size: 20px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 5px;
+      border-radius: 50%;
+      color: #4b5d73;
+    }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body p-0">
+                        <div class="row p-4">
+                            <div class="col-md-6">
+                                <img src="https://codevidhya.com/assets/images/png/codevidhya_logo.png">
+                            </div>
+    
+                            <div class="col-md-6 text-right company-info">
+                                <h2>INVOICE</h2>
+                                <p><b>Codevidhya India Private Limited</b><br>
+                                96,Officers Campus,<br>
+                                Vaishali Nagar,<br>
+                                Jaipur, Rajashan 302021
+                                <br> India
+                                </p>
+                                <br><br>
+                                <p>Mobile: +91-7357286330 <br>
+                                <a href="https://codevidhya.com/">www.codevidhya.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        
+                        <!--<hr class="my-5">-->
+    
+                        <div class="row pb-5 p-5">
+                            <div class="col-md-6">
+                                <p class="font-weight-bold mb-4">BILL TO</p>
+                                <p class="mb-1"><%= BillTo.name %></p>
+                                <!--TO DO : Placeholder for Address-->
+                                <p class="mb-1"><%= BillTo.address %></p>
+                                <p class="mb-1"><%= BillTo.city %></p>
+                                <p class="mb-1"><%= BillTo.state %></p>
+                                <p class="mb-1"><%= BillTo.email %></p>
+                            </div>
+    
+                            <div class="col-md-6 text-right">
+                                <p class="font-weight-bold mb-4">Invoice Details</p>
+                                <p class="mb-1"><span class="text-muted">Invoice Number: </span> <%= Invoice.id %></p>
+                                <p class="mb-1"><span class="text-muted">Invoice Date: </span> <%= Invoice.date %></p>
+                                <p class="mb-1"><span class="text-muted">Paymnet Due Date: </span> <%= Invoice.date %></p>
+                                <p class="mb-1"><span class="text-muted">Amount Due(INR): </span> <span><%= Payement.amountDue %></span> 0.00</p>
+                            </div>
+                        </div>
+    
+                        <div class="row p-5">
+                            <div class="col-md-12">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-0 text-uppercase small font-weight-bold">S.No</th>
+                                            <th class="border-0 text-uppercase small font-weight-bold">Product Name</th>
+                                            <!--<th class="border-0 text-uppercase small font-weight-bold">Description</th>-->
+                                            <th class="border-0 text-uppercase small font-weight-bold">Quantity</th>
+                                            <th class="border-0 text-uppercase small font-weight-bold">Unit Price</th>
+                                            <th class="border-0 text-uppercase small font-weight-bold">Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% Products.forEach(function (Product,index){ %>
+                                            <tr>
+                                                <td><%= index + 1 %></td>
+                                                <td><%= Product.name %></td>
+                                                <td><%= Product.quantity %></td>
+                                                <td><%= Product.unitPrice %></td>
+                                                <td><%= Product.amount %></td>
+                                            </tr>
+                                        <% }) %>
+                                        <% }) %>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-md-6 float-right ">
+                            <table class="float-right">
+                                <tbody>
+                                    <tr>
+                                        <td><span class="font-weight-bold mb-4">Total : <spanp></td>
+                                        <td><span>&#8377</span> <%= Payment.totalAmount %></td>
+                                    </tr>
+                                      <tr>
+                                        <td><span class="font-weight-bold mb-4">Discount : </span></td>
+                                         <td><span>-</span><span>&#8377</span>  <%= Payment.discount %></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="font-weight-bold mb-4">Coupon Discount : </span></td>
+                                         <td><span>-</span><span>&#8377</span>  <%= Payment.couponDiscount %> </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="font-weight-bold mb-4">Tax : </span></td>
+                                         <td><span>+</span><span>&#8377</span> <%= Payment.tax %></td>
+                                    </tr>
+                                    <tr><td> <hr></td><td><hr></td></tr>
+                                    <tr>
+                                        <td><span class="font-weight-bold mb-4">Grand Total : </span></td>
+                                        <td><span></span><span>&#8377</span>  <%= Payment.grandtotal %></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                             
+                        </div>
+                       
+                    </div>
+                    <hr>
+                    <div class="social col-sm-12" style="text-align: center;">
+                        <a  href="#" class="fa fa-2x fa-facebook"></a>
+                        <a  href="#" class="fa fa-2x  fa-twitter"></a>
+    
+                        <a  href="#" class="fa fa-2x  fa-instagram"></a>
+                        <a href="#" class="fa fa-2x  fa-linkedin"></a>
+    
+                    </div>
+                </div>
+                
+            </div>
+    
+        </div>
+        
+        
+    
+    </div>
+    
+   <div class="outer-border">
+   <div class="inner-border">
+     <span class="title">Certificate of Completion</span>
+     <br/><br/>
+     <span class="fs25"><i>This is to certify that</i></span>
+     <br/><br/>
+     <span class="fs30"><b><%= student.name %></b></span><br/><br/>
+     <span class="fs25"><i>has completed the course</i></span> <br/><br/>
+     <span class="fs30"><%= student.couse_name %></span> <br/><br/>
+     <span class="fs20">with score of <b><%= student.grade %>%</b></span> <br/><br/><br/><br/>
+     <span class="fs25"><i>dated</i></span><br/>
+     <span class="fs30"><%= student.completion_date %></span>
+   </div>
+   </div>
+ </body>
+</html>

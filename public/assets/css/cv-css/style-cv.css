@@ -1,0 +1,23 @@
+.cv-error {
+  color: red;
+}
+
+.rating-stars {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-stars > div {
+  position: relative;
+  align-self: flex-start;
+}
+
+.rating-stars .filled-stars {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
