@@ -7,7 +7,7 @@ var pool;
 
 if (process.env.CV_SITE == "local") {
   pool = mysql.createPool({
-    connectionLimit: 80,
+    connectionLimit: 100,
     host: "localhost",
     port: "3306",
     user: "root",
@@ -16,7 +16,7 @@ if (process.env.CV_SITE == "local") {
   });
 } else if (process.env.CV_SITE == "main") {
   pool = mysql.createPool({
-    connectionLimit: 50,
+    connectionLimit: 100,
     host: "codevidhya.c4xzkxt5owyy.ap-south-1.rds.amazonaws.com",
     port: "3306",
     user: "admin",
@@ -25,7 +25,7 @@ if (process.env.CV_SITE == "local") {
   });
 } else if (process.env.CV_SITE == "test") {
   pool = mysql.createPool({
-    connectionLimit: 50,
+    connectionLimit: 100,
     host: "localhost",
     port: "3306",
     user: "root",
@@ -43,11 +43,3 @@ module.exports.getConnection = function() {
     });
   });
 };
-
-/* module.exports.mysql = {
-  host: "localhost",
-  user: "root",
-  password: "ek19go3n",
-  database: "new_codevidhya",
-  port: "3306"
-};*/
