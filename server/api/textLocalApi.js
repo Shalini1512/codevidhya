@@ -43,13 +43,3 @@ const smsClient = {
 };
 
 module.exports = smsClient;
-
-  /*const axios = require("axios");
-  message = `This Template For Test ${param.name}`;
-  let contact = "918290908900";//"91" + param.contact;
- // console.log(contact);
-  url = `https://api.textlocal.in/send/?apikey=JDA6Ts2/cNM-lYbBIMfebb30NCtWxpaST3CvrajE9f&sender=CODVDY&numbers=918290908900&message=This Template For Test hii`;
-  console.log(url);
-  axios.get(url).then((result) => {
-  //  console.log(result.data);
-  });*/
