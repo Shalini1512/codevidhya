@@ -59,7 +59,7 @@ var jsonWrite = function(res, ret) {
   }
 };
 function escapeRegExp(text) {
-  return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
+  return text.replace('a', 'b');
 }
 function runSqlQueryAsyncSelect(query, params) {
   return new Promise((resolve, reject) => {
@@ -132,21 +132,6 @@ const randomFiles = function(dir, callback) {
   });
 };
 
-router.post("/getrandomfile", async (req, res) => {
-  //console.log('Hey! i am here');
-  res.end();
-  /* const dir = path.resolve(appRoot + "/resources/quotes_of_day/");
-  randomFiles(dir, (err, filename) => {
-    if (err) {
-      console.log(err);
-    } else if (!filename) {
-      console.log("no files in /temp/myapp");
-    } else {
-      // console.log("random filename is " + filename);
-      res.send(filename);
-    }
-  });*/
-});
 router.post("/sendPasswordResetEmail", (req, res) => {
   return runSqlQueryAsyncSelect("select email from cv_users where email=?", [
     req.body.email,
@@ -596,153 +581,6 @@ router.post("/login", function(req, res) {
               }
             }
           );
-
-          //remove tracking  await loginCheckFunction(result[0].user_id);
-          /* pool.query(
-            "SELECT * FROM `user_spent_time` where user_spent_time.user_id=? and DATE_FORMAT(user_spent_time.login_time,'%d %m %y') = DATE_FORMAT(now(),'%d %m %y')",
-            [result[0].user_id],
-            function(err, data) {
-              // console.log(data);
-              if (data.length) {
-                let count = parseInt(data[0].times_in_day) + 1;
-                
-              pool.query(
-                  "update `user_spent_time` set times_in_day =?,login_time=now(),user_status=? where user_id =? and DATE_FORMAT(user_spent_time.login_time,'%d %m %y') = DATE_FORMAT(now(),'%d %m %y')",
-                  [count, 1, result[0].user_id],
-                  function(err, data1) {
-                    console.log(err);
-                    if (!err) {
-                      if (result[0].role_id == 3 && result.length != 0) {
-                        pool.query(
-                          "SELECT cls_id,sec_id FROM cv_st_detail  where user_id= ? ",
-                          [result[0].user_id],
-                          function(err, result1, fields) {
-                            if (err) {
-                              throw err;
-                            } else {
-                              const user = {
-                                user_id: result[0].user_id,
-                                sch_id: result[0].sch_id,
-                                sch_name: result[0].sch_name,
-                                role_id: result[0].role_id,
-                                name: result[0].name,
-                                cls_id: result1[0].cls_id,
-                                sec_id: result1[0].sec_id,
-                                dir_path: result[0].path,
-                                sch_logo: getRelativePathFromFullPath(
-                                  path.resolve(
-                                    appRoot +
-                                      "/static/school_logo/" +
-                                      result[0].logo
-                                  )
-                                ),
-                                user_email: result[0].email,
-                                user_contact: result[0].contact
-                              };
-                              const token = setToken(user);
-
-                              res.json({
-                                token: token,
-                                user: result[0].username
-                              });
-                            }
-                          }
-                        );
-                      } else if (result.length != 0) {
-                        const user = {
-                          user_id: result[0].user_id,
-                          sch_id: result[0].sch_id,
-                          sch_name: result[0].sch_name,
-                          role_id: result[0].role_id,
-                          name: result[0].name,
-                          dir_path: result[0].path,
-                          sch_logo: getRelativePathFromFullPath(
-                            path.resolve(
-                              appRoot + "/static/school_logo/" + result[0].logo
-                            )
-                          ),
-                          user_email: result[0].email,
-                          user_contact: result[0].contact
-                        };
-                        const token = setToken(user);
-                        res.json({
-                          token: token,
-                          user: result[0].username
-                        });
-                      }
-                    }
-                  }
-                );
-              } else {
-                // console.log("else condition");
-               /* pool.query(
-                  "INSERT INTO `user_spent_time`(`user_id`,`user_status`) VALUES (?,?)",
-                  [result[0].user_id, 1],
-                  function(err, data) {
-                    if (!err) {
-                      if (result[0].role_id == 3 && result.length != 0) {
-                        pool.query(
-                          "SELECT cls_id,sec_id FROM cv_st_detail  where user_id= ? ",
-                          [result[0].user_id],
-                          function(err, result1, fields) {
-                            if (err) {
-                              throw err;
-                            } else {
-                              const user = {
-                                user_id: result[0].user_id,
-                                sch_id: result[0].sch_id,
-                                sch_name: result[0].sch_name,
-                                role_id: result[0].role_id,
-                                name: result[0].name,
-                                cls_id: result1[0].cls_id,
-                                sec_id: result1[0].sec_id,
-                                dir_path: result[0].path,
-                                sch_logo: getRelativePathFromFullPath(
-                                  path.resolve(
-                                    appRoot +
-                                      "/static/school_logo/" +
-                                      result[0].logo
-                                  )
-                                ),
-                                user_email: result[0].email,
-                                user_contact: result[0].contact
-                              };
-                              const token = setToken(user);
-                              res.json({
-                                token: token,
-                                user: result[0].username
-                              });
-                            }
-                          }
-                        );
-                      } else if (result.length != 0) {
-                        const user = {
-                          user_id: result[0].user_id,
-                          sch_id: result[0].sch_id,
-                          sch_name: result[0].sch_name,
-                          role_id: result[0].role_id,
-                          name: result[0].name,
-                          dir_path: result[0].path,
-                          sch_logo: getRelativePathFromFullPath(
-                            path.resolve(
-                              appRoot + "/static/school_logo/" + result[0].logo
-                            )
-                          ),
-                          user_email: result[0].email,
-                          user_contact: result[0].contact
-                        };
-                        const token = setToken(user);
-                        res.json({
-                          token: token,
-                          user: result[0].username
-                        });
-                      }
-                    }
-                  }
-                );
-              }
-            }
-          );*/
         } else {
           pool.query(
             "SELECT role_id, username FROM cv_admin where username=? and password=?",
@@ -832,11 +670,6 @@ router.post("/loginWithGoogle", function(req, res) {
             password: "",
           })
             .then((data) => {
-              // Tracking removed
-
-              //return checkTrackUser(data.userId)
-              //.then(() => {
-              // console.log('we are here bro')
               var userData = {
                 user_id: data.userId,
                 sch_id: 1,
